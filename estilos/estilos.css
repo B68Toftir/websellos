@@ -1,0 +1,333 @@
+
+/***********************/
+/* Estil dels links*****/
+/***********************/
+a:link {
+    color: darkslateblue; 
+    text-decoration: none; 
+}
+
+/* Estil per als enllaços que ja han estat visitats */
+a:visited {
+    color: darkslateblue; 
+}
+
+/* Estil per als enllaços quan el ratolí passa per sobre */
+a:hover {
+    color:salmon; 
+}
+
+/* Estil per als enllaços quan es fa clic */
+a:active {
+    color: darkslateblue; /
+}
+
+/***********************/
+/* Estil del body ******/
+/***********************/
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    color:darkslateblue;
+    background-color: aliceblue;
+}
+
+/************************/
+/* Estil del header *****/
+/************************/
+header {
+    
+    text-align: center;
+    background-image: url('../imagenes/banner.jpg');
+    padding-bottom:15px;
+    padding-top:15px;
+    background-position:100px;
+
+}
+/*********************/
+/* Estil del nav *****/
+/*********************/
+
+nav{
+    float: left;
+    font-size:medium;
+    font-weight: bolder;
+    width:12%;
+    padding-top:65px;  
+}
+
+
+/*********************/
+/* Estil del aside ***/
+/*********************/
+aside{
+    float: right;
+    font-size:small;
+    font-weight: bolder;
+    width:12%;
+    margin-top: 70px;
+    
+}
+
+/* Estil d'una llista */
+aside ul {
+    margin-right: 5px;     
+    padding-right: 5px;
+}
+
+/* Estil dels components de la llista */
+aside li {
+    list-style-type: none;
+}
+
+/*********************/
+/* Estil del main ****/
+/*********************/
+
+main {
+    text-align: center;
+    /*overflow: auto;*/
+    width:100%;
+    
+}
+
+/*********************/
+/* Estil del section */
+/*********************/
+section{
+    text-align: center;
+    
+}
+
+/*********************/
+/* Estil del article */
+/*********************/
+article {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex; /* Activa el model Flexbox */
+    align-items: flex-start; /* Alinea la imatge a l'esquerra i el text a la dreta */
+    justify-content: flex-start; /* Centra els elements dins del contenidor */
+    gap: 20px; /* Espai entre la imatge i el text */  
+}
+
+/*********************/
+/* Estil del footer **/
+/*********************/
+footer {
+    text-align: center;
+    height:15%;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+h2 {
+    text-align:left;
+    padding-left:15px;
+    text-decoration:underline;
+}
+
+h4 {
+    flex: 1; /* El text ocupa l'espai restant */
+    text-align: justify;
+}
+
+/***************************/
+/**   TITOLS   *************/
+/***************************/
+
+/* Títol amb ombra al voltant */
+.titol-silueta {
+    font-size: 2em; /* Mida del títol */
+    color: rgb(5, 10, 83);  /* Color del text */
+    text-shadow: 
+        -2px -2px 0 white, /* Ombra superior esquerra */
+         2px -2px 0 white, /* Ombra superior dreta */
+        -2px  2px 0 white, /* Ombra inferior esquerra */
+         2px  2px 0 white; /* Ombra inferior dreta */
+}
+
+/*  Semblant al anterior peró sense envoltori*/
+.titol-sense-silueta {
+    font-size: 2em; /* Mida del títol */
+    color: rgb(5, 10, 83);  /* Color del text */
+}
+
+/***************************/
+/*   IMATGES ***************/
+/***************************/
+
+/* Fer una imatge escalada amb 300 a horitzontal */
+.imatge-escalada-hor{
+    width: 200px; /* Amplada inicial (escala petita) */
+    height: auto; /* Manté les proporcions */
+    transition: transform 0.3s ease; /* Transició suau */
+    display: block;
+    margin: 0 auto;
+
+} 
+
+/* Aquesta imatge al passar per sobre el punter del ratolí és fa més gran 
+.imatge-escalada-hor:hover {
+    transform: scale(1.5); /* Escala la imatge al 150% (o tamany real) 
+}*/
+
+/* Fer una imatge escalada amb 300 a vertical */
+.imatge-escalada-ver{
+    width: auto; /* Amplada inicial (escala petita) */
+    height: 200px; /* Manté les proporcions */
+    transition: transform 0.3s ease; /* Transició suau */
+    display: block;
+    margin: 0 auto;
+}
+ /* Aquesta imatge al passar per sobre el punter del ratolí és fa més gran 
+.imatge-escalada-ver:hover {
+    transform: scale(1.5); /* Escala la imatge al 150% (o tamany real) 
+}
+*/
+.imatge-escalada-hor2{
+    width: 150px; /* Amplada inicial (escala petita) */
+    height: auto; /* Manté les proporcions */
+    transition: transform 0.3s ease; /* Transició suau */
+    display: block;
+    margin: 0 auto;
+
+}
+.imatge-escalada-ver2{
+    width: auto; /* Amplada inicial (escala petita) */
+    height: 150px; /* Manté les proporcions */
+    transition: transform 0.3s ease; /* Transició suau */
+    display: block;
+    margin: 0 auto;
+}
+
+
+.central{
+    width: 70%; /* Amplada del div respecte a la pantalla */
+    height: 690px; /* L'alçada màxima serà el 90% de la pantalla */
+    overflow-y: auto; /* Afegeix una barra de desplaçament vertical si el contingut supera l'alçada */
+    margin: 0 auto; /* Centra el div horitzontalment */
+    border: 1px solid black; /* Opcional: límits visibles */
+    padding: 10px; /* Espai intern */
+    box-sizing: border-box; /* Inclou el padding dins de l'alçada i amplada */
+    background-color: #f5f5f5; /* Color de fons suau */
+    scrollbar-color: #e0e0e0 darkslateblue ; /* Polze (barra) i track (fons) */
+    scrollbar-width: auto; /* Amplada del scrollbar: thin, auto o none */
+    border-radius: 3px;
+    
+}
+
+/* Estil del ul-li de paissos */
+.lista-paisos {
+    display: flex;
+    flex-grow:1;
+    gap: 8px; /* Espai entre els elements */
+    list-style-type: none; /* Treu els punts per defecte */
+    padding: 0; /* Elimina el marge interior per defecte de les llistes */
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-paisos li {
+    text-align: center; /* Centra el text de cada element de la llista */
+    background-color: darkslateblue; /* Color de fons dels elements */
+    padding: 10px; /* Espai intern dins de cada element */
+    border-radius: 5px; /* Cantonades arrodonides */
+    border: 1px solid #bbb; /* Límit opcional */
+    font-weight: bolder;
+    color:aliceblue;
+    flex:1;
+}
+
+.paissos-h2{
+    text-align:center;
+}
+
+.lista-paisos a {
+    color: aliceblue; /* Color específic per a aquesta classe */
+}
+
+.lista-paisos a:hover {
+    color: salmon; /* Color al passar el ratolí per sobre */
+}
+
+/* TAULA FALTES SEGELLS*/
+.lista-faltes {
+    display: flex;
+    justify-content: center; /* Centra horitzontalment */
+    align-items: center; /* Centra verticalment */
+    font-size:small;
+    font-weight: bolder;
+}
+
+/* Div contenidor dels links */
+.cont-links {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.llista-menu {
+    display: flex;
+    flex-direction: column; /* Canvia de fila a columna */
+    gap: 5px; /* Espai entre elements */
+    list-style-type: none;
+    padding:0;
+    margin-top:20px;
+    margin-left:8px;
+}
+.llista-menu li {
+    text-align: left; 
+    background-color: darkslateblue; /* Color de fons dels elements */
+    padding: 10px; /* Espai intern dins de cada element */
+    border-radius: 5px; /* Cantonades arrodonides */
+    border: 1px solid #bbb; /* Límit opcional */
+    color:aliceblue;
+    flex:1;
+}
+
+.llista-menu a:link {
+    color: aliceblue; 
+    text-decoration: none; 
+}
+
+/* Estil per als enllaços que ja han estat visitats */
+.llista-menu a:visited {
+    color: aliceblue; 
+}
+
+/* Estil per als enllaços quan el ratolí passa per sobre */
+.llista-menu a:hover {
+    color:salmon; 
+}
+
+/* Estil per als enllaços quan es fa clic */
+.llista-menu a:active {
+    color: aliceblue; /
+}
+
+/****************************************************/
+/* Estil per pàgina links.html / section ************/
+/****************************************************/
+/****************************************************/
+.links {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: auto;
+    margin-top: 40px;
+    margin-left: 40px;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+.links li {
+    display: flex;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+    
