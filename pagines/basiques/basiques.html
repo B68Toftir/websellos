@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 
     <!--fichero de estilos que utilizaremos en la página.-->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../../estilos/estilos.css">
 </head>
 
 <body>
@@ -22,53 +22,20 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="./paissos.html">PAÏSSOS</a></li>
-            <li><a href="./basiques.html">SÈRIES BÀSIQUES</a></li>
-            <li><a href="./fulles.html">FULLES D'ALBUM</a></li>
-            <li><a href="./catalegs.html">CATÀLEGS FILATÈLICS</a></li>
+        <ul class = "llista-menu">
+            <li><a href="../../index.html">NOTÍCIES</a></li>
+            <li><a href="../paissos/aland.html">PAÏSSOS</a></li>
+            <li><a href="basiques.html">SÈRIES BÀSIQUES</a></li>
+            <li><a href="../repetits/repes-eur.html">REPETITS</a></li>
+            <li><a href="">LLIBRES ANUALS</a></li>
+            <li><a href="../fulles/fulles.html">FULLES D'ALBUM</a></li>
+            <li><a href="../catalegs/catalegs.html">CATÀLEGS FILATÈLICS</a></li>
+            <li><a href="../links.html">LINKS</a></li>
         </ul>
-        <img id="random-image" src="" alt="Segell aleatori">
 
     </nav>
 
-    <script>
-        // Array amb els camins de les imatges
-        const imatges = [
-            "../imagenes/segells/segell02.jpg",
-            "../imagenes/segells/segell03.jpg",
-            "../imagenes/segells/segell01.jpg",
-            "../imagenes/segells/segell04.jpg",
-            "../imagenes/segells/segell05.jpg",
-            "../imagenes/segells/segell06.jpg"
-        ];
-
-        // Funció per assignar una imatge aleatòria
-        function canviarImatge() {
-            const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
-            const imatgeElement = document.getElementById("random-image");
-            
-            // Suavitza el canvi d'imatge amb una transició
-            imatgeElement.style.opacity = 0; // Oculta l'actual
-            setTimeout(() => {
-                imatgeElement.src = imatgeAleatoria; // Assigna la nova
-                imatgeElement.style.opacity = 1; // Torna a mostrar-la
-            }, 500); // Temps de la transició (0.5 segons)
-        }
-
-        // Configura una imatge inicial i després canvia cada 5 segons
-        canviarImatge();
-        setInterval(canviarImatge, 3000); // Canvia cada 5 segons
-    </script>
-
     <aside>
-
-        <ul>
-            <h3><b>LINKS</b><br></h3>
-            <li><a href="https://colnect.com/ca/stamps/countries/swap_list/B68Toftir" target="_blank" alt="La meva pàgina a colnect">El meu colnect</a>
-            <li><a href="https://www.germanstamps.net" target="_blank" alt="Web sobre els segells alemanys abans del 1945">Germanstamps.net</a></li>
-            <li><a href="https://www.stampalbums.com" target="_blank" alt="Web amb multitut de pàgines per colocar segells, per païssos">Stampalbums.com/</a></li>
-        </ul>
        
         <h3><b>Formulari</b></h3>
 
@@ -94,22 +61,39 @@
 
     <main>
     
-        <h1 class="titol-silueta">FULLES D'ALBUM</h1>
+        <h1 class="titol-silueta">FALTES SERIES BÀSSIQUES</h1>
      
     </main>
 
     <section>
         <div class="central">
             <ul class="lista-paisos">
-                <li><a href="../fullesalbum/siracusana.pdf" target="_blank">ITALIA SIRACUSANA</a></li>
-                <li><a href="../fullesalbum/saar.pdf" target="_blank">SAAR (1920-1958)</a></li>
-                <li><a href="../fullesalbum/SwedenThreeCrowns.pdf" target="_blank">SUÈCIA TRES CORONES</a></li>
-                <li><a href="../fullesalbum/saar.pdf" target="_blank">SAAR</a></li>
-                <li><a href="../fullesalbum/saar.pdf" target="_blank">SAAR</a></li>
-                <li><a href="../fullesalbum/saar.pdf" target="_blank">SAAR</a></li>
-                <li><a href="../fullesalbum/saar.pdf" target="_blank">SAAR</a></li>
-                <li><a href="../fullesalbum/saar.pdf" target="_blank">SAAR</a></li>
+                <li><a href="">ITÀLIA SIRACUSANA</a></li>
+                <li><a href="basiques.html">ITÀLIA CASTELLS</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
             </ul>
+
+            <h2 class="paissos-h2">SEGELLS QUE EM FALTEN DELS CASTELLS D'ITÀLIA</h2>
+
+            <table class="lista-faltes">
+                <tr>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1701I.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1702I.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1725.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1707I.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1726.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1711II.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1727.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1712II.jpg" alt=""></td>
+                    <td><img class="imatge-escalada-ver2" src="../../imagenes/segells/faltesbassiques/ita 1723III.jpg" alt=""></td>
+                </tr>
+            </table>
+
         </div>        
     </section>
 
